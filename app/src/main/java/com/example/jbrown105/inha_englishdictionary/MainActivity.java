@@ -1,10 +1,16 @@
 package com.example.jbrown105.inha_englishdictionary;
 
+import android.content.Context;
+import android.hardware.display.VirtualDisplay;
+import android.inputmethodservice.KeyboardView;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -87,6 +93,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
                 return true;
+            }
+        });
+
+        etR.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus)
+            {
+                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(mResults.getWindowToken(), 0);
             }
         });
     }
