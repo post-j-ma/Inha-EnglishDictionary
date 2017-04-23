@@ -1,4 +1,4 @@
-package com.example.jbrown105.inha_englishdictionary;
+package com.postjma.postjma.inha_englishdictionary;
 
 import org.junit.Test;
 

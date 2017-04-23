@@ -1,13 +1,8 @@
-package com.example.jbrown105.inha_englishdictionary;
+package com.postjma.postjma.inha_englishdictionary;
 
 import android.content.Context;
-import android.hardware.display.VirtualDisplay;
-import android.inputmethodservice.KeyboardView;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.InputType;
-import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -16,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 
-public class MainActivity extends AppCompatActivity {
+public class InhaDictionaryActivity extends AppCompatActivity {
     private EditText mWord = null, mResults = null;
     private boolean mFirst = true;
     private HashMap<String, String> mInha2Results = null;

@@ -1,4 +1,4 @@
-package com.example.jbrown105.inha_englishdictionary;
+package com.postjma.postjma.inha_englishdictionary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
